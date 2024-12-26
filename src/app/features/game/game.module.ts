@@ -1,21 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GameBoardComponent } from './components/game-board/game-board.component';
-import { ColorButtonsComponent } from './components/color-buttons/color-buttons.component';
-import { ScoreDisplayComponent } from './components/score-display/score-display.component';
 import { StartGameComponent } from './components/start-game/start-game.component';
-
-
-
+import { HomeComponent } from './components/home/home.component';
 @NgModule({
   declarations: [
-    GameBoardComponent,
-    ColorButtonsComponent,
-    ScoreDisplayComponent,
-    StartGameComponent
+    StartGameComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+  ],
+  exports: [
+    StartGameComponent,
   ]
 })
-export class GameModule { }
+export class GameModule {}

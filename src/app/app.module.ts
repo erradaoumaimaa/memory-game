@@ -4,9 +4,12 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GameModule } from './features/game/game.module';
+import { HomeComponent } from './features/game/components/home/home.component';
+
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent,  
+    HomeComponent
   ],
   imports: [
     BrowserModule,
